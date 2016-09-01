@@ -15,10 +15,10 @@ describe("Underscore Array functions", function() {
     hundreds = _.range(100,1000,100);
     negativeUnits = _.range(-1,-10,-1);
 
-    expect([1,2,3,4,5,6,7,8,9,10]).toEqual(units);
-    expect([10,20,30,40,50,60,70,80,90,100]).toEqual(tens);
-    expect(__).toEqual(hundreds);
-    expect(__).toEqual(negativeUnits);
+    expect([1,2,3,4,5,6,7,8,9]).toEqual(units);
+    expect([10,20,30,40,50,60,70,80,90]).toEqual(tens);
+    expect([100,200,300,400,500,600,700,800,900]).toEqual(hundreds);
+    expect([-1,-2,-3,-4,-5,-6,-7,-8,-9]).toEqual(negativeUnits);
   });
 
   it("_.intersection returns the common elements in two arrays ", function() {
@@ -28,7 +28,7 @@ describe("Underscore Array functions", function() {
 
     multiplesOf6 = _.intersection(multiplesOf2,multiplesOf3);
 
-    expect(__).toEqual(multiplesOf6);
+    expect([6,12,18]).toEqual(multiplesOf6);
   });
 
 

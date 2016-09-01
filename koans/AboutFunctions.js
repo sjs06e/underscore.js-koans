@@ -5,7 +5,7 @@ describe("Underscore Function functions", function() {
       greetings = { morning: 'Good morning!' };
     sayHi = _.bind(sayHi, greetings);
 
-    expect(__).toEqual(sayHi());
+    expect("Good morning!").toEqual(sayHi());
   });
 
   it("_.bind can also bind arguments", function() {
@@ -15,7 +15,7 @@ describe("Underscore Function functions", function() {
       greetings = { beginning: "Good", end: "!" };
     sayHi = _.bind(sayHi, greetings, "evening", "John");
     
-    expect(__).toEqual(sayHi());
+    expect("Good evening, John!").toEqual(sayHi());
   });
   
   
